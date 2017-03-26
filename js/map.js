@@ -12,7 +12,7 @@ var markersData = [
    {
       lat: 20.348896,
       lng:  85.814761,
-      name: "Camping Praia da Barra",
+      name: "Campus 15 total 18 parking space",
       address1:"Rua Diogo Cão, 125",
       address2: "Praia da Barra",
       postalCode: "3830-772 Gafanha da Nazaré" // don't insert comma in the last item of each marker
@@ -20,15 +20,15 @@ var markersData = [
    {
       lat: 20.349250,
       lng:  85.816341,
-      name: "Camping Costa Nova",
+      name: "Campus 6 total 8 parking space",
       address1:"Quinta dos Patos, n.º 2",
       address2: "Praia da Costa Nova",
       postalCode: "3830-453 Gafanha da Encarnação" // don't insert comma in the last item of each marker
    },
    {
-      lat: 20.348981, 
+      lat: 20.348981,
       lng: 85.816994,
-      name: "Camping Gafanha da Nazaré",
+      name: "Camping 24 parking space",
       address1:"Rua dos Balneários do Complexo Desportivo",
       address2: "Gafanha da Nazaré",
       postalCode: "3830-225 Gafanha da Nazaré" // don't insert comma in the last item of each marker
@@ -65,8 +65,8 @@ function displayMarkers(){
 
    // this variable sets the map bounds according to markers position
    var bounds = new google.maps.LatLngBounds();
-   
-   // for loop traverses markersData array calling createMarker function for each marker 
+
+   // for loop traverses markersData array calling createMarker function for each marker
    for (var i = 0; i < markersData.length; i++){
 
       var latlng = new google.maps.LatLng(markersData[i].lat, markersData[i].lng);
@@ -78,7 +78,7 @@ function displayMarkers(){
       createMarker(latlng, name, address1, address2, postalCode);
 
       // marker position is added to bounds variable
-      bounds.extend(latlng);  
+      bounds.extend(latlng);
    }
 
    // Finally the bounds variable is used to set the map bounds
@@ -98,14 +98,14 @@ function createMarker(latlng, name, address1, address2, postalCode){
    // When this event is fired the Info Window content is created
    // and the Info Window is opened.
    google.maps.event.addListener(marker, 'click', function() {
-      
+
       // Creating the content to be inserted in the infowindow
       var iwContent = '<div id="iw_container">' +
             '<div class="iw_title">' + name + '</div>' +
          '<div class="iw_content">' + address1 + '<br />' +
          address2 + '<br />' +
          postalCode + '</div></div>';
-      
+
       // including content to the Info Window.
       infoWindow.setContent(iwContent);
 
