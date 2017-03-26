@@ -1,0 +1,115 @@
+body{
+  margin: auto;
+  background-image:url('https://media.giphy.com/media/zhUOF7Xx0QAAU/giphy.gif');
+   background-size:100%;
+   background-repeat: repeat-y;
+   background-attachment: fixed;
+   height:100%;
+   width:100%;
+}
+.navbar{
+  width:100%;
+  height: 22px;
+  background-color: #22212d;
+  padding: 5px;
+  color: #fcfcfc;
+  padding-left: 8px;
+  font-size: 60px;
+  font-family: Impact, Charcoal, sans-serif;
+
+}
+#progra{
+  height: 9px;
+  width:70%;
+  align-self: center;
+  margin-top:55px;
+}
+.progkalist li{
+  font-size: 20px;
+  color: blue;
+  margin-top: -12px;
+  padding-left: 12%;
+    padding-right: 14%;
+}
+.progkalist{
+  text-align: center;
+}
+ul{
+  text-align: right;
+  margin: -14px;
+  padding: 0px;
+  height: 23px;
+  list-style: none;
+}
+.navbar ul li{
+  display: inline;
+  font-size: 20px;
+}
+.sidebar{
+  position: absolute;
+display: inline-block;
+margin-top: 201px;
+text-align: center;
+width:19%;
+font-family: cursive;
+}
+.sidebar ul li{
+  text-align: center;
+  height: 20px;
+  background-color: grey;
+  padding-top: 4px;
+  margin: 4px;
+  border: 3px solid black;
+  border-radius: 5px;
+  width: 100%;
+  font-family: cursive;
+}
+a{
+  text-decoration: none;
+  color:inherit;
+}
+#googleMap{
+  height: 470px;
+  width: 80%;
+  margin-top: 50px;
+  display: inline-block;
+}
+#tablur{
+  height: 470px;
+  width: 80%;
+  margin-top: 50px;
+  display: inline-block;
+}
+table, th , td  {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+}
+
+th,td{
+  width: 80px;
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+iframe{
+  height: 170px;
+    width: 227px;
+}
+.team{
+  height: 300px;
+  width: 200px;
+  display: inline-table;
+  background-color: white;
+}
+.team h2{
+  font-style: italic;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 0px;
+}
