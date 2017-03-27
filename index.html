@@ -6,19 +6,28 @@
 <body>
 
   <div id="fb-root"></div>
-<script>(function(d, s, id) {
+/*yh facebook k liye tha*/
+<script>
+(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+</script>
 
-  <div class="navbar">
-    SMART PARKING SYSTEM
+  <div class="navbar" >
+    <h1>SMART PARKING SYSTEM</h1>
+    <ul class="menu">
+      <li>LOCATE by Map</li>
+      <a href="name.html"><li>LOCATE by Name</li></a>
+      <li>Sign In</li>
+      <li onclick="scrollkro()" style="color:white;">MEET US</li>
+    </ul>
   </div>
   <br>
-  <div class="navbar" style="text-align:center;">
+  <div class="navbar2" style="text-align:center;">
     <ul class="progkalist">
       <li>1.SEARCH</li>
       <li>2.BOOK</li>
@@ -29,13 +38,6 @@
   <div>
 
   <div id="googleMap"><iframe src="map.html" style="width:100%;height:450px;"></iframe></div>
-  <div class="sidebar">
-  <ul>
-    <li>LOCATE by Map</li>
-    <a href="name.html"><li>LOCATE by Name</li></a>
-    <li>Sign In</li>
-  </ul>
-</div>
 </div>
 <div style="text-align:center; width:100%;">
   <h3 onclick="scrollkro()" style="color:white;">MEET THE TEAM</h3>

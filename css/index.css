@@ -10,13 +10,32 @@ body{
 .navbar{
   width:100%;
   height: 22px;
+
+  text-align: right;
   background-color: #22212d;
   padding: 5px;
   color: #fcfcfc;
   padding-left: 8px;
   font-size: 60px;
   font-family: Impact, Charcoal, sans-serif;
-
+}
+.navbar h1{
+  font-size: 40px;
+  font-family: Impact, Charcoal, sans-serif;
+  margin: 0px;
+    text-align: left;
+}
+.navbar2{
+  top: 30px;
+    position: relative;
+}
+.menu{
+  position: relative;
+  top:-70px;
+  left:-12px;
+  display: inline;
+  text-align: right;
+  margin-right: 9px;
 }
 #progra{
   height: 9px;
@@ -26,13 +45,16 @@ body{
 }
 .progkalist li{
   font-size: 20px;
-  color: blue;
+  color: white;
   margin-top: -12px;
-  padding-left: 12%;
+  padding-left: 10%;
     padding-right: 14%;
+      display: inline;
 }
 .progkalist{
   text-align: center;
+  position: relative;
+top: 43px;
 }
 ul{
   text-align: right;
@@ -41,29 +63,12 @@ ul{
   height: 23px;
   list-style: none;
 }
+
 .navbar ul li{
   display: inline;
   font-size: 20px;
 }
-.sidebar{
-  position: absolute;
-display: inline-block;
-margin-top: 201px;
-text-align: center;
-width:19%;
-font-family: cursive;
-}
-.sidebar ul li{
-  text-align: center;
-  height: 20px;
-  background-color: grey;
-  padding-top: 4px;
-  margin: 4px;
-  border: 3px solid black;
-  border-radius: 5px;
-  width: 100%;
-  font-family: cursive;
-}
+
 a{
   text-decoration: none;
   color:inherit;
@@ -72,13 +77,19 @@ a{
   height: 470px;
   width: 80%;
   margin-top: 50px;
+  margin-left: 9%;
   display: inline-block;
 }
 #tablur{
   height: 470px;
   width: 80%;
+  text-align: center;
   margin-top: 50px;
+  margin-left: 12%;
   display: inline-block;
+}
+table{
+  text-align: center;
 }
 table, th , td  {
   border: 1px solid grey;
@@ -102,7 +113,7 @@ iframe{
     width: 227px;
 }
 .team{
-  height: 300px;
+  height: 200px;
   width: 200px;
   display: inline-table;
   background-color: white;
@@ -112,4 +123,24 @@ iframe{
   border: 1px solid black;
   border-radius: 4px;
   margin: 0px;
+}
+.grid{
+  height: 200px;
+  width: 200px;
+  display: inline;
+  background-color: white;
+  border: 1px solid black;
+}
+.gridkapappa{
+  color: white;
+  background-color:rgba(100, 100, 100, 0.5);
+  border: 2px solid white;
+  margin: 2px;
+  width: 300px;
+  display: inline-block;
+}
+.gridkapappa:hover{
+  transform: scale(1.025);
+  color: white;
+  background-color:rgba(100, 100, 100,0.8);
 }

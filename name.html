@@ -2,39 +2,38 @@
 <link rel="stylesheet" type="text/css" href="css\index.css">
 <script src="javascript\index.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-animate.min.js"></script>
 <body>
   <div class="navbar">
-    SMART PARKING SYSTEM
+    <h1>SMART PARKING SYSTEM</h1>
+    <ul class="menu">
+      <li><a href="index.html">LOCATE by Map</a></li>
+      <a href="name.html"><li>LOCATE by Name</li></a>
+      <li>Sign In</li>
+    </ul>
   </div>
   <br>
-  <div class="navbar" style="text-align:center;">
+  <div class="navbar2" style="text-align:center;">
     <ul class="progkalist">
       <li><a href="index.html">1.SEARCH</li></a>
       <li><a href="name.html">2.BOOK</li></a>
       <li>3.PAY</li>
     </ul>
-    <progress id="progra" value="22" max="100">
-    </progress></div>
+  <progress id="progra" value="22" max="100">
+  </progress></div>
+  <div>
   <div id="tablur" ng-app="myApp" ng-controller="customersCtrl">
     <div ng-show="one">
-    <table>
-      <tr>
-        <th>serial number</th>
-        <th>Address</th>
-        <th>distance</th>
-        <th>Price</th>
-        <th>Available spots</th>
-        <th>BOOK space</th>
-      </tr>
-  <tr ng-repeat="x in names">
-    <td>{{ $index + 1 }}</td>
-    <td>{{ x.Name }}</td>
-    <td></td>
-    <td>{{ x.price }}</td>
-    <td>{{ x.Avail }}</td>
-    <td ng-click='showOne()' value="{{$index}}" onclick="travel()">BOOK!!</td>
-  </tr>
-</table>
+  <div ng-repeat="x in names" class="gridkapappa">
+    <div class="grid">
+    <p>{{ $index + 1 }}</p>
+    <p>{{ x.Name }}</p>
+    <p>{{ x.price }}</p>
+    <p>{{ x.Avail }}</p>
+    <p ng-click='showOne()' value="{{$index}}" onclick="travel()" style="font-weight:100000;">CLICK TO BOOK!!</p>
+  </div>
+  </div>
+
   <div class="sidebar" ng-show="three" style=" position: relative;top: -471px;left: 99%;">
   <ul>
     <a href="index.html"><li>LOCATE by Map</li></a>
@@ -44,12 +43,10 @@
 </div>
 </div>
 <div ng-show="two">
-  <table style="left:55%;">
-    <tr ng-repeat="x in Spaces">
-      <td>{{x.floor}}</td>
-      <td ng-click='showTwo()' onclick="travel2()">REGISTER YOUR SPOT</td>
-    </tr>
-  </table>
+    <div ng-repeat="x in Spaces" class="gridkapappa">
+      <p>{{x.floor}}</p>
+      <p ng-click='showTwo()' onclick="travel2()">REGISTER YOUR SPOT</p>
+    </div>
 </div>
 <div ng-show="four">
   <iframe src="https://www.paypal.com/in/home" style="width:100%;height:500px;"></iframe>

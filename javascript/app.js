@@ -16,19 +16,19 @@ app.controller('customersCtrl', function($scope) {
 ]
 var spaceID=[{floor:"basement"},
 {floor:"basement"},
-{floor:"outside"},
-{floor:"outside"},
-{floor:"groundfloor"},
+{floor:"basement"},
+{floor:"basement"},
+{floor:"basement"},
+{floor:"basement"},
 {floor:"basement"},
 {floor:"groundfloor"},
-{floor:"basement"},
-{floor:"basement"},
+{floor:"groundfloor"},
+{floor:"groundfloor"},
 {floor:"groundfloor"},
 {floor:"outside"},
 {floor:"outside"},
-{floor:"basement"},
-{floor:"groundfloor"},
-{floor:"basement"},
+{floor:"outside"},
+{floor:"outside"}
 ]
 $scope.Spaces=spaceID;
        $scope.names = nameId;
