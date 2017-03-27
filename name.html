@@ -25,12 +25,12 @@
   <div id="tablur" ng-app="myApp" ng-controller="customersCtrl">
     <div ng-show="one">
   <div ng-repeat="x in names" class="gridkapappa">
-    <div class="grid">
+    <div class="grid" ng-click='showOne()'>
     <p>{{ $index + 1 }}</p>
     <p>{{ x.Name }}</p>
     <p>{{ x.price }}</p>
     <p>{{ x.Avail }}</p>
-    <p ng-click='showOne()' value="{{$index}}" onclick="travel()" style="font-weight:100000;">CLICK TO BOOK!!</p>
+    <p  value="{{$index}}" onclick="travel()" style="font-weight:100000;">CLICK TO BOOK!!</p>
   </div>
   </div>
 
@@ -43,9 +43,9 @@
 </div>
 </div>
 <div ng-show="two">
-    <div ng-repeat="x in Spaces" class="gridkapappa">
+    <div ng-repeat="x in Spaces" class="gridkapappa"ng-click='showTwo()'>
       <p>{{x.floor}}</p>
-      <p ng-click='showTwo()' onclick="travel2()">REGISTER YOUR SPOT</p>
+      <p  onclick="travel2()">REGISTER YOUR SPOT</p>
     </div>
 </div>
 <div ng-show="four">
