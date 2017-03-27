@@ -139,8 +139,12 @@ iframe{
   width: 300px;
   display: inline-block;
 }
+a:link,a:visited,a:hover,a:active {
+    text-decoration: none;
+    color:white;
+}
 .gridkapappa:hover{
-  transform: scale(1.025);
+  transform: scale(1.125);
   color: white;
   background-color:rgba(100, 100, 100,0.8);
 }
