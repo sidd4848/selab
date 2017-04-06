@@ -2,6 +2,7 @@
 <link rel="stylesheet" type="text/css" href="css\index.css">
 <script src="javascript\index.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="javascript\app.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-animate.min.js"></script>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -47,14 +48,16 @@
   </div>
   </div>
   <div>
-  <div id="tablur" ng-app="myApp" ng-controller="customersCtrl">
+  <div id="tablur" ng-app="myApp" ng-controller="customersCtrl" >
     <div ng-show="one">
-  <div ng-repeat="x in names" class="gridkapappa">
-    <div class="grid" ng-click='showOne()'>
+      <input type="text" placeholder="search" ng-model="searchtext"/><br>
+  <div ng-repeat="x in names | filter : searchtext" class="gridkapappa">
+    <div class="grid" ng-click='showOne(x.Name, x.price)'>
     <p>{{ $index + 1 }}</p>
     <p>{{ x.Name }}</p>
-    <p>{{ x.price }}</p>
-    <p>{{ x.Avail }}</p>
+    <p>{{ x.price|currency:'&#8377' }}</p>
+    <p>{{ x.address}}</p>
+    <p>{{ x.img }}</p>
     <p  value="{{$index}}" onclick="travel()" style="font-weight:100000;">CLICK TO BOOK!!</p>
   </div>
   </div>
@@ -68,15 +71,15 @@
 </div>
 </div>
 <div ng-show="two">
-    <div ng-repeat="x in Spaces" class="gridkapappa"ng-click='showTwo()'>
+    <div ng-repeat="x in Spaces" class="gridkapappa"ng-click='showTwo(x.floor)'>
       <p>{{x.floor}}</p>
       <p  onclick="travel2()">REGISTER YOUR SPOT</p>
     </div>
 </div>
 <div ng-show="four">
-  <iframe src="https://www.paypal.com/in/home" style="width:100%;height:500px;"></iframe>
+  <h3 style="color:white;">payment portal</h3>
 </div>
 </div>
+<div id="demo"></div>
 </body>
-<script src="javascript\app.js"></script>
 </html>

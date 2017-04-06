@@ -1,0 +1,18 @@
+{
+  "records": [
+  {"Name":"Campus 15",	"price":"18", "Avail":"9"},
+  {"Name":"Campus 2",	"price":"17", "Avail":"10"},
+  {"Name":"InfoCity",	"price":"15", "Avail":"23"},
+  {"Name":"Campus 6",	"price":"14", "Avail":"28"},
+  {"Name":"Campus 2",	"price":"17", "Avail":"10"},
+  {"Name":"InfoCity",	"price":"15", "Avail":"23"},
+  {"Name":"Campus 6",	"price":"14", "Avail":"28"},
+  {"Name":"Campus 2",	"price":"17", "Avail":"10"},
+  {"Name":"InfoCity",	"price":"15", "Avail":"23"},
+  {"Name":"Campus 6",	"price":"14", "Avail":"28"},
+  {"Name":"Campus 2",	"price":"17", "Avail":"10"},
+  {"Name":"InfoCity",	"price":"15", "Avail":"23"},
+  {"Name":"Campus 6",	"price":"14", "Avail": "28"}
+  ]
+  
+}
